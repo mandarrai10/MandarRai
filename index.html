@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./icons/PngItem_1468479.png">
+    <title>My Profile</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="nav-items" class="name">Raja Aravindha</span>
+        <a class="nav-items" href="#">Home</a>
+        <a class="nav-items" href="#about">About me</a>
+        <a class="nav-items" href="#skills">My Skills</a>
+        <a class="nav-items" href="#work">My Work</a>
+        <a class="nav-items" href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+
+        <span class="me"><b>Hello! I am Raja Aravindha </b></span>
+        <br>I am an aspiring Software Engineer currently Studying at VIT,Vellore
+        <div class="filler" id="about"></div>
+        <div class="card">
+            <h2>About me</h2>
+            Hello everyone, I am Raja Aravindha from Bangalore-India, currently pursuing Computer Science engineering at
+            VIT
+            Vellore.
+            I am really interested in the <br>field of
+            Web Development and aspire to become an exceptional software and web developer.
+            <br>
+            This is my profile Page that I designed inorder to put my HTML and CSS skills into use and explain a little
+            about myself.
+            I really want to explore and <br> improve my skill set and expand my knowledge as much as possible.
+        </div>
+        <div class="filler" id="skills"></div>
+        <div class="card">
+            <h2>My Skills</h2>
+            <b>Programming Languages:</b>
+            <ul>
+                <li>C Programming</li>
+                <li>C++ Programming</li>
+                <li>Python Programming</li>
+                <li>Shell Programming</li>
+                <li>Java Programming-Beginner</li>
+                <li>Javascript-Beginner</li>
+            </ul>
+            I can also work with <u>HTML and CSS</u> and <u>Git</u> version Control System
+            <br>
+            I am currently also learning to build web applications and programs using <br>
+            NodeJs and JavaScript Frameworks.
+        </div>
+        <div class="filler" id="work"></div>
+
+        <div class="card">
+            <h2>My Work</h2>
+            • Drawing Economic Conclusions by applying
+            feature selection on the Indian Stock Market - AI Model to predict Stock prices using <br>
+            python and libraries suck as numpy, pandas,etc. <br>
+
+            • I Have worked on a few mini-projects inorder to implement my programming knowledge and learn <br> more
+            things as i build
+            stuff. <br>
+            <i>
+                Although these are not ground-breaking apps nor are they advanced implementations of programming,but
+                these
+                really
+                help us to learn the basics well, <br>helping us to actually apply the things we learn .
+            </i><br>
+            Here are a few of the <u>mini-projects</u>:
+            <ul>
+                <li>A Password Generator using Python(GUI-Based) <a
+                        href="https://github.com/Comphile/Password-generator"><span class="arrow">↗</span></a> </li>
+                <li>A Calculator using Javascript <a href="https://comphile.github.io/Calculator/"><span
+                            class="arrow">↗</span></a></li>
+                <li>A Todo List using HTML,CSS and Javascript <a href="https://comphile.github.io/To-do-List/"><span
+                            class="arrow">↗</span></a></li>
+                <li>A Simple GUI-Based Rock Paper Scissors Game using Java <a
+                        href="https://github.com/Comphile/Rock-Paper-Scissors"><span class="arrow">↗</span></a></li>
+            </ul>
+            View the Source Code and the working implementations on my Github Page: <br>
+            <button class="gh-button" onclick="takemetogh()"> <img class="gh-icon"
+                    src="./icons/GitHub-Mark-Light-32px.png" alt=""> Comphile</button>
+            <a href="https://github.com/Comphile" id="gh-link" target="_blank"></a>
+        </div>
+
+        <div class="filler" id="contact"></div>
+        <div class="card">
+            <h2>Contact</h2>
+
+            <b>Email</b> : rajaaravindha.a@gmail.com <br>
+            <b>Github</b> : <a href="https://github.com/Comphile">Comphile</a> <br>
+            <b>Twitter</b> : <a href="https://twitter.com/Rajawastaken">@Rajawastaken</a>
+        </div>
+    </div>
+    <script>
+        let ghlink = document.getElementById("gh-link");
+        let navbar = document.querySelector('nav');
+        function takemetogh() {
+            ghlink.click();
+        }
+        function desktopcheck() {
+            var check = false;
+            if (window.innerWidth > 768) {
+                check = true;
+            }
+            return check;
+        }
+
+        window.onload = ()=>{
+            if(!desktopcheck()){
+                navbar.className="navbar-mobile";
+            }
+            else{
+                navbar.className="navbar" ;
+            }
+        }
+    </script>
+</body>
+
+</html>
